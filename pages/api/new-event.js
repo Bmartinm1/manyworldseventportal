@@ -14,7 +14,6 @@ async function handler(req, res) {
 		const eventsCollection = db.collection('events');
 
 		const result = await eventsCollection.insertOne(data);
-		console.log(result);
 
 		client.close();
 
